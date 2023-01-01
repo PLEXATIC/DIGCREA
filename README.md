@@ -18,3 +18,29 @@ Computation power can either be accessed using google-colab or by using a pretty
 
 ## Attempts
 Unfortunately, there was no time yet to start attempting to create such a video. However, at the very latest when the PC arrives, attempts will definitely be made.
+
+# Project
+## Process
+We started out by trying out the following technologies:
+1.	StyleGAN 3
+2.	Stable Diffusion
+3.	StyleGAN 2
+4.	Maua StyleGAN
+5.	BigGAN
+
+## Final Product
+Our Final Product is a mixture between BigGAN and Stable Diffusion. First, we take the music Input and create a Video with BigGAN. We take the frames of the video from BigGAN as Inputs for a Stable Diffusion Img2Img Model and create a new Video with BigGAN.
+
+## Code Structure
+1.	Cut audio in small pieces
+2.	Use audio fft to get spectograms for the piece generated in step 1.
+3.	Summarize the frequency from spectogram
+4.	Get weighted sum of random vectors per spectogram strength (each vector has noise_dim as dimensionality)
+5.	Use noise to create an image / prompt class for interpolation
+6.	Use diffusion to create final image
+7.	Add the images together and add the music to them, for the output video
+
+## Parameters
+
+## Outputs / Examples
+- Check [Plexatics YouTube Channel](https://www.youtube.com/@plexatic5558/videos) for Video Examples
