@@ -50,7 +50,7 @@ You can find the file saved as [diffused-biggan.ipynb](https://github.com/PLEXAT
 We recommend uploading that file onto Google Colab or [lambda labs](https://lambdalabs.com/) for faster image generation.
 
 In the file you can easily change the following parameters:
-- **Input path of the music file**
+- **Input path of the music file** (we recommend using music from [Pixabay.com](https://pixabay.com/music/) as it's royalty-free)
 - **Output path of the video file**
 
 #### BigGAN specific parameters
@@ -70,7 +70,8 @@ In the file you can easily change the following parameters:
 - **Number of steps to generate the image**, how many steps we use to generate the image
 - **Unconditional guiding Scale**, how much the image should follow the prompt
 - **Input Image strength**, how much the output differs from the input image
- 
+
+If the video generation takes too long, you can cancel running the second last cell, then run the last cell and it will generate a video with the images generated up to then.
 
 ### Outputs / Examples
 - Check [Plexatics YouTube Channel](https://www.youtube.com/@plexatic5558/videos) for Video Examples
