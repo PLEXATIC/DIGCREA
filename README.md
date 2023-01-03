@@ -28,18 +28,18 @@ After talking to our [teacher](https://github.com/gu-ma), we looked around for a
 ##### Maua StyleGAN
 From the repo mentioned above, we took the [maua StyleGAN](https://github.com/dvschultz/ml-art-colabs/blob/master/maua_stylegan2_audioreactive.ipynb) approach, fixed it and played around with it. Even though it was StyleGAN it still needed a lot of computing power, which costed quite a lot to "only" run some experiments on google Colab.
 
-![maua StyleGAN output](./gifs_readme/maua_stylegan.gif "maua StyleGAN output")
+<img src="./gifs_readme/maua_stylegan.gif" width="80%" />
 
 #### BigGAN
 As we struggled with most other models, we decided to use a small to test everything with and we were even able to run BigGAN on our Laptops locally. So we went with this and found a great [GitHub repository](https://github.com/msieg/deep-music-visualizer), which we used to get us started.
 
-![BigGAN output](./gifs_readme/biggan.gif "BigGAN output")
+<img src="./gifs_readme/biggan.gif" width="80%" />
 
 
 ### Final Product
 Our Final Product is a mixture between BigGAN and Stable Diffusion. First, we take the music Input and create a Video with BigGAN. We take the frames of the video from BigGAN as Inputs for a Stable Diffusion Img2Img Model and create a new Video with BigGAN.
 
-![Final output example](./gifs_readme/stable_diffusion.gif "Final output example")
+<img src="./gifs_readme/stable_diffusion.gif" width="80%" />
 
 ### Code Structure
 1.	Cut audio in small pieces
@@ -54,7 +54,7 @@ Our Final Product is a mixture between BigGAN and Stable Diffusion. First, we ta
 You can find the file saved as [diffused-biggan.ipynb](https://github.com/PLEXATIC/DIGCREA/blob/main/diffused_biggan.ipynb) in the root of this repository.
 We recommend uploading that file onto Google Colab or [lambda labs](https://lambdalabs.com/) for faster image generation.
 
-![Setup Colab](./gifs_readme/colab_setup.gif "Colab Setup"){ width=100% }
+<img src="./gifs_readme/colab_setup.gif" width="80%" />
 
 In the file you can easily change the following parameters:
 - **Input path of the music file** (we recommend using music from [Pixabay.com](https://pixabay.com/music/) as it's royalty-free)
