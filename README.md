@@ -4,28 +4,23 @@
 StyleGAN2 has fascinated us with the amazing quality of images it can generate.
 A demonstration of its power can be seen on [thispersondoesnotexist.com](https://thispersondoesnotexist.com).
 
-<a href="https://thispersondoesnotexist.com">
-<img src="./gifs_readme/thispersondoesnotexist.gif" width="80%">
-</a>
+[<img src="./gifs_readme/thispersondoesnotexist.gif" width="80%">](https://thispersondoesnotexist.com)
+
+
 
 People have come up with a way to create nice videos which morph from one image to another. Because they interpolate the images in latent space this is called a "Latent Walk". A demonstration of this can be seen in [this Video, in which a beach is being generated](https://youtu.be/R2jCpK-asEo).
 
-<a href="https://youtu.be/R2jCpK-asEo">
-<img src="./gifs_readme/thisbeachdoesnotexist.gif" width="80%">
-</a>
+[<img src="./gifs_readme/thisbeachdoesnotexist.gif" width="80%">](https://youtu.be/R2jCpK-asEo)
 
 This is already very cool, but there's even more. People wanted to have these videos react to music, which is called "Audioreactive Latent Walk".
 A demonstration of this can be seen in [the Video "Audio-reactive Latent Interpolations with StyleGAN2-ada" of the YouTuber Nerdy Rodent](https://www.youtube.com/watch?v=ffesnWqknXI) (Demo starts at 5:50).
 
-<a href="https://www.youtube.com/watch?v=ffesnWqknXI">
-<img src="./gifs_readme/nerdy_rodent.gif" width="80%">
-</a>
+[<img src="./gifs_readme/nerdy_rodent.gif" width="80%">](https://www.youtube.com/watch?v=ffesnWqknXI)
+
 
 On the [YouTube Channel of Tim Hawkey](https://www.youtube.com/@ArtificialSelections) are some more really impressive videos, mainly generated with Stable Diffusion.
 
-<a href="https://www.youtube.com/watch?v=_NfEC6wWhqI&t=166s">
-<img src="./gifs_readme/tim_hawkey.gif" width="80%">
-</a>
+[<img src="./gifs_readme/tim_hawkey.gif" width="80%">](https://www.youtube.com/watch?v=_NfEC6wWhqI&t=166s)
 
 ### Tools
 There are several libraries and pretrained models that are to be used in order to create such a video. This includes the default ML-Libraries like numpy, tensorflow/pytorch, opencv, and of course a pretrained StyleGAN2 model. Potentially, the StyleGAN2 Model could be exchanged for a stable-diffusion model, as there have already been made some attempts to create videos using stable diffusion.
