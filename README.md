@@ -46,18 +46,22 @@ From the repo mentioned above, we took the [maua StyleGAN](https://github.com/dv
 
 
 
-https://user-images.githubusercontent.com/73790811/210607280-051878fe-eadd-46c7-866e-ada46a95628a.mp4
+https://user-images.githubusercontent.com/73790811/210657491-8ae1a4ce-a7d5-413d-86b1-09ad07b2ae54.mp4
 
 
+https://user-images.githubusercontent.com/73790811/210657499-723e6e51-1061-42d6-bbdf-2b6d4987b2f5.mp4
 
-https://user-images.githubusercontent.com/73790811/210607308-4a549bbb-7630-480c-9c7c-47b623f792a8.mp4
+
 
 
 #### BigGAN
 As we struggled with most other models, we decided to use a small to test everything with and we were even able to run BigGAN on our Laptops locally. So we went with this and found a great [GitHub repository](https://github.com/msieg/deep-music-visualizer), which we used to get us started.
 
 
-https://user-images.githubusercontent.com/73790811/210607353-359ff2e5-3dbd-4379-8489-5a765937de14.mp4
+
+
+
+https://user-images.githubusercontent.com/73790811/210657523-57139e7e-ed88-46b7-8b07-56935ae0a325.mp4
 
 
 
@@ -67,8 +71,9 @@ Our Final Product is a mixture between BigGAN and Stable Diffusion. First, we ta
 
 
 
+https://user-images.githubusercontent.com/73790811/210657568-46b08806-9fab-4cac-ad83-08df3c06c007.mp4
 
-https://user-images.githubusercontent.com/73790811/210607638-172de42a-5ef7-48ef-81c8-e7eeb6c6b9fe.mp4
+
 
 This video was generated with the following settings:<br/>
 truncation = 0.7<br/>
@@ -89,8 +94,9 @@ input_image_strength=0.5<br/>
 
 
 
+https://user-images.githubusercontent.com/73790811/210657588-e87f3588-22c1-4024-83ec-8f399bf6a83b.mp4
 
-https://user-images.githubusercontent.com/73790811/210607789-c834eed5-344e-4df2-8df5-d4484be12807.mp4
+
 
 This one had those settings:<br/>
 truncation = 0.7<br/>
@@ -124,7 +130,10 @@ You can find the file saved as [diffused-biggan.ipynb](https://github.com/PLEXAT
 We recommend uploading that file onto Google Colab or [lambda labs](https://lambdalabs.com/) for faster image generation.
 
 
-https://user-images.githubusercontent.com/73790811/210607940-430d3b86-f496-47a3-9c7a-2c057e9d5d50.mp4
+
+https://user-images.githubusercontent.com/73790811/210657633-6d83e324-448d-4d50-a76a-d726408b300b.mp4
+
+
 
 #### Local installation
 If you want to try to run the file locally, there are the following points to consider:</br>
@@ -135,11 +144,12 @@ Additionally you need to install:
 - numpy
 - matplotlib
 
+#### Parameters
 In the file you can easily change the following parameters:
 - **Input path of the music file** (we recommend using music from [Pixabay.com](https://pixabay.com/music/) as it's royalty-free)
 - **Output path of the video file**
 
-#### BigGAN specific parameters
+##### BigGAN specific parameters
 
 - **[Biggan Labels](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a)** that will be used in the images for the Video
 - **Truncation** is the vector length that will be used within BigGAN
@@ -150,11 +160,11 @@ In the file you can easily change the following parameters:
 - **Smoothing Factor** defines how the random vectors will be mixed
 - **Iterations** amount of times the smoothing algorithm will be applied
 
-##### BigGAN video Generation
+###### BigGAN video Generation
 The video from BigGAN is not cached in an MP4 format or similar. If you want to do this, you can use the same procedure as for Stable Diffusion. You have to initialise a video writer and then write each created frame into it and finally generate the video with the release function.
 
 
-#### Stable Diffusion specific parameters
+##### Stable Diffusion specific parameters
 - **Prompt**, the prompt that will be used to generate the Stable Diffusion image
 - **Number of interpolation steps**, how many steps we use to interpolate between two images
 - **Number of steps to generate the image**, how many steps we use to generate the image
